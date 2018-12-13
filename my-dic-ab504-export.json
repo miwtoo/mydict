@@ -1,0 +1,18 @@
+{
+  "dictionary" : {
+    "-LRVi4-40A6d41XPe22j" : {
+      "lastdate" : 1542793055,
+      "mean" : [ "มด", "มดตัวน้อยตัวนิด" ],
+      "other" : "มดตัวน้อย",
+      "sentence" : [ "this is ant", "big ant" ],
+      "word" : "ant"
+    },
+    "-LRq357W_lwMRQ2CuSIT" : {
+      "lastdate" : 1542794522,
+      "mean" : [ "เทส1", "เทส2" ],
+      "other" : "เทสสสสสส",
+      "sentence" : [ "TesssT", "EiEI" ],
+      "word" : "test"
+    }
+  }
+}

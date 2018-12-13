@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+<form (ngSubmit)="addWord(wordForm.value)" #wordForm="ngForm">
+  <label for="word"> คำ </label>
+  <input type="text" name="word"  [(ngModel)]="word[4]">
+
+  <label for="mean"> ความหมาย</label>
+  
+  <div *ngFor="let item of word[1]; let i = index; trackBy: myCustomTrackBy" >
+    <input type="text" [ngModel]="word[1][i]" [value]="item" name="mean">
+  </div>
+  <input type="button" value="+" (click)="addMean()"><br>
+
+  <label for="sentent"> ประโยค</label>
+  <div *ngFor="let item of word[3]">
+    <input type="text" [value]="item">
+  </div>
+
+  <label for="word"> หมายเหตุ </label>
+  <input type="text" name="other"  [(ngModel)]="word[2]">
+  <button type="submit">บันทึก</button>
+</form>
+<a routerLink="/">Back To Word List</a>
+
+<div *ngFor="let item of word[1]; let i = index; trackBy: myCustomTrackBy" >
+    <div>{{word[1][i]}}</div>
+</div>

@@ -1,0 +1,25 @@
+<a routerLink="/addWord">เพิ่มคำ</a>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <td>คำ</td>
+      <td>ความหมาย</td>
+      <td>ประโยค</td>
+      <td>หมายเหตุ</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of words">
+      <td>{{data.word}}</td>
+      <td>{{data.mean}}</td>
+      <td>{{data.sentence}}</td>
+      <td>{{data.other}}</td>
+      <td>
+        <button type="button" (click)="editWord(data)">Edit</button>
+        <button type="button" (click)="delWord(data)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
